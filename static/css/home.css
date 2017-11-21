@@ -1,0 +1,180 @@
+#rcorners1 {
+    border-radius: 25px;
+    background: #003399;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 410px;
+    right: 850px;
+    color: white;
+}
+#rcorners1:hover{
+    background-color: #cc3300;
+}
+#rcorners2 {
+    border-radius: 25px;
+    background: #003399;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 410px;
+    right: 650px;
+    color: white;
+}
+#rcorners2:hover{
+    background-color: #cc3300;
+}
+#rcorners3 {
+    border-radius: 25px;
+    background: #003399;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 410px;
+    right: 450px;
+    color: white;
+}
+#rcorners3:hover{
+    background-color: #cc3300;
+}
+#rcorners4 {
+    border-radius: 25px;
+    background: #003399;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 410px;
+    right: 250px;
+    color: white;
+}
+#rcorners4:hover{
+    background-color: #cc3300;
+}
+#rcorners5 {
+    border-radius: 25px;
+    background: #003399;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 520px;
+    right: 850px;
+    color: white;
+}
+#rcorners5:hover{
+    background-color: #cc3300;
+}
+#rcorners6 {
+    border-radius: 25px;
+    background: #003399;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 520px;
+    right: 650px;
+    color: white;
+}
+#rcorners6:hover{
+    background-color: #cc3300;
+}
+#rcorners7 {
+    border-radius: 25px;
+    background: #003399;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 520px;
+    right: 450px;
+    color: white;
+}
+#rcorners7:hover{
+    background-color: #cc3300;
+}
+#rcorners8 {
+    border-radius: 25px;
+    background: #003399;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 520px;
+    right: 250px;
+    color: white;
+}
+#rcorners8:hover{
+    background-color: #cc3300;
+}
+#logo{
+    background-image: url('../images/sneaky stats.png');
+    height: 115px;
+    width: 200px;
+    position: absolute;
+    top: 5px;
+    right: 1050px;
+}
+#abbicus{
+    background-image: url('../images/maths.jpeg');
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+}
+#home_button{
+    background-color: white;
+    border: white;
+    position: absolute;
+    top: 115px;
+    right: 300px;
+    font-size: 16px;
+    height: 30px;
+    width: 70px;
+}
+#home_button:hover{
+    color: #cc3300;
+}
+#contact_us{
+    background-color: white;
+    border: white;
+    position: absolute;
+    top: 115px;
+    right: 200px;
+    font-size: 16px;
+    height: 30px;
+    width: 110px;
+}
+#contact_us:hover{
+    color: #cc3300;
+}
+#login{
+    background-color: white;
+    color: black;
+    border: 2px solid #cc3300;
+    position: absolute;
+    top: 5px;
+    right: 100px;
+    height: 30px;
+    width: 70px;
+}
+#register {
+    background-color: #cc3300;
+    color: white;
+    border: 2px solid #cc3300;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    height: 30px;
+    width: 70px;
+}
+#calc{
+    color: #cc3300;
+    position: absolute;
+    top: 350px;
+    right: 660px;
+}

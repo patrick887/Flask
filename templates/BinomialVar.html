@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binomial Variance</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/binomial.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<div class="topBar">
+    <div class="dropdown">
+        <button class="dropbtn">Continuous Random</button>
+        <div class="dropdown-content">
+            <a href="/Continuous">E(x)</a>
+            <a href="ContinuousVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Discrete Random</button>
+        <div class="dropdown-content">
+            <a href="/Discrete">E(x)</a>
+            <a href="DiscreteVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Rectangular</button>
+        <div class="dropdown-content">
+            <a href="/Rectangular">E(x)</a>
+            <a href="/RectangularVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Poisson</button>
+        <div class="dropdown-content">
+            <a href="/Poisson">E(x)</a>
+            <a href="#">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Binomial</button>
+        <div class="dropdown-content">
+            <a href="/Binomial">E(x)</a>
+            <a href="/BinomialVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Normal</button>
+        <div class="dropdown-content">
+            <a href="/Normal">E(x)</a>
+            <a href="#">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Derivations</button>
+        <div class="dropdown-content">
+            <a href="/Binomial">Binomial</a>
+            <a href="/Rectangular">Rectangular</a>
+            <a href="/Normal">Normal</a>
+            <a href="/Poisson">Poisson</a>
+            <a href="/Discrete">Discrete Random</a>
+            <a href="/Continuous">Continuous Random</a>
+        </div>
+    </div>
+        <div class="dropdown">
+        <button class="dropbtn">Tests</button>
+        <div class="dropdown-content">
+            <a href="/Binomial">Binomial</a>
+            <a href="/Rectangular">Rectangular</a>
+            <a href="/Normal">Normal</a>
+            <a href="/Poisson">Poisson</a>
+            <a href="/Discrete">Discrete Random</a>
+            <a href="/Continuous">Continuous Random</a>
+        </div>
+    </div>
+</div>
+<div id="rcorners">
+    <form id="calc" method="POST">
+        <div class="text-center">
+            <h1>Binomial Var(x)</h1>
+        </div>
+        <label for="event">Enter the Number of Events (n): </label>
+        <input type="text" class="form-control" id="event" name="event" placeholder="Event"></br>
+        <label for="number">Enter the Number of Success (r):</label>
+        <input type="text" id="number" class="form-control" name="number" placeholder="Success"></br>
+        <label for="prob">Enter the Probability of Success (p):</label>
+        <input type="text" id="prob" class="form-control" name="prob" placeholder="Probability of success"></br>
+        <input id="login" type="submit" class="btn-block" value="submit">
+    </form>
+    </br>
+    <h3>The Binomial Variance is : {{ value }}</h3>
+</div>
+</body>
+</html>

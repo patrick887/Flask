@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangular</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/binomial.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<div class="topBar">
+    <div class="dropdown">
+        <button class="dropbtn">Continuous Random</button>
+        <div class="dropdown-content">
+            <a href="/Continuous">E(x)</a>
+            <a href="ContinuousVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Discrete Random</button>
+        <div class="dropdown-content">
+            <a href="/Discrete">E(x)</a>
+            <a href="DiscreteVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Rectangular</button>
+        <div class="dropdown-content">
+            <a href="/Rectangular">E(x)</a>
+            <a href="/RectangularVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Poisson</button>
+        <div class="dropdown-content">
+            <a href="/Poisson">E(x)</a>
+            <a href="#">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Binomial</button>
+        <div class="dropdown-content">
+            <a href="/Binomial">E(x)</a>
+            <a href="/BinomialVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Normal</button>
+        <div class="dropdown-content">
+            <a href="/Normal">E(x)</a>
+            <a href="#">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Derivations</button>
+        <div class="dropdown-content">
+            <a href="/Binomial">Binomial</a>
+            <a href="/Rectangular">Rectangular</a>
+            <a href="/Normal">Normal</a>
+            <a href="/Poisson">Poisson</a>
+            <a href="/Discrete">Discrete Random</a>
+            <a href="/Continuous">Continuous Random</a>
+        </div>
+    </div>
+        <div class="dropdown">
+        <button class="dropbtn">Tests</button>
+        <div class="dropdown-content">
+            <a href="/Binomial">Binomial</a>
+            <a href="/Rectangular">Rectangular</a>
+            <a href="/Normal">Normal</a>
+            <a href="/Poisson">Poisson</a>
+            <a href="/Discrete">Discrete Random</a>
+            <a href="/Continuous">Continuous Random</a>
+        </div>
+    </div>
+</div>
+<div id="rcorners">
+    <form id="calc" method="POST">
+        <div class="text-center">
+            <h1>Rectangular E(x)</h1>
+        </div>
+        <label for="equation">Equation: </label>
+        <input type="text" class="form-control" id="equation" name="equation" placeholder="ax^2+bx+c"></br>
+        <label for="upper">Upper limit:</label>
+        <input type="text" id="upper" class="form-control" name="upper" placeholder="Upper"></br>
+        <label for="lower">Lower limit:</label>
+        <input type="text" id="lower" class="form-control" name="lower" placeholder="Lower"></br>
+        <input id="login" type="submit" class="btn-block" value="submit">
+    </form>
+    </br>
+    <h3>The Rectangular expectation is : {{ value }}</h3>
+</div>
+</body>
+</html>

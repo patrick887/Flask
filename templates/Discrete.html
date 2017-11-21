@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discrete</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/binomial.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<div class="topBar">
+    <div class="dropdown">
+        <button class="dropbtn">Continuous Random</button>
+        <div class="dropdown-content">
+            <a href="/Continuous">E(x)</a>
+            <a href="ContinuousVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Discrete Random</button>
+        <div class="dropdown-content">
+            <a href="/Discrete">E(x)</a>
+            <a href="DiscreteVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Rectangular</button>
+        <div class="dropdown-content">
+            <a href="/Rectangular">E(x)</a>
+            <a href="/RectangularVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Poisson</button>
+        <div class="dropdown-content">
+            <a href="/Poisson">E(x)</a>
+            <a href="#">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Binomial</button>
+        <div class="dropdown-content">
+            <a href="/Binomial">E(x)</a>
+            <a href="/BinomialVar">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Normal</button>
+        <div class="dropdown-content">
+            <a href="/Normal">E(x)</a>
+            <a href="#">Var(x)</a>
+            <a href="#">Manipulating</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Derivations</button>
+        <div class="dropdown-content">
+            <a href="/Binomial">Binomial</a>
+            <a href="/Rectangular">Rectangular</a>
+            <a href="/Normal">Normal</a>
+            <a href="/Poisson">Poisson</a>
+            <a href="/Discrete">Discrete Random</a>
+            <a href="/Continuous">Continuous Random</a>
+        </div>
+    </div>
+        <div class="dropdown">
+        <button class="dropbtn">Tests</button>
+        <div class="dropdown-content">
+            <a href="/Binomial">Binomial</a>
+            <a href="/Rectangular">Rectangular</a>
+            <a href="/Normal">Normal</a>
+            <a href="/Poisson">Poisson</a>
+            <a href="/Discrete">Discrete Random</a>
+            <a href="/Continuous">Continuous Random</a>
+        </div>
+    </div>
+</div>
+<div id="rcorners">
+    <form id="calc" method="POST">
+        <div class="text-center">
+            <h1>Discrete Random E(x)</h1>
+        </div>
+        <label>X values</label>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1">
+                    <label for="1">1</label>
+                    <input type="text" id="1" name="1" placeholder="1">
+                </div>
+                <div class="col-sm-1">
+                    <label for="2">2</label>
+                    <input type="text" id="2" name="2" placeholder="2">
+                </div>
+                <div class="col-sm-1">
+                    <label for="3">3</label>
+                    <input type="text" id="3" name="3" placeholder="3">
+                </div>
+                <div class="col-sm-1">
+                    <label for="4">4</label>
+                    <input type="text" id="4" name="4" placeholder="4">
+                </div>
+                <div class="col-sm-1">
+                    <label for="5">5</label>
+                    <input type="text" id="5" name="5" placeholder="5">
+                </div>
+                <div class="col-sm-1">
+                    <label for="6">6</label>
+                    <input type="text" id="6" name="6" placeholder="6">
+                </div>
+            </div>
+        </div>
+        <label>Probability of (X=x)</label>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1">
+                    <label for="1x">1</label>
+                    <input type="text" id="1x" name="1x" placeholder="1">
+                </div>
+                <div class="col-sm-1">
+                    <label for="2x">2</label>
+                    <input type="text" id="2x" name="2x" placeholder="2">
+                </div>
+                <div class="col-sm-1">
+                    <label for="3x">3</label>
+                    <input type="text" id="3x" name="3x" placeholder="3">
+                </div>
+                <div class="col-sm-1">
+                    <label for="4x">4</label>
+                    <input type="text" id="4x" name="4x" placeholder="4">
+                </div>
+                <div class="col-sm-1">
+                    <label for="5x">5</label>
+                    <input type="text" id="5x" name="5x" placeholder="5">
+                </div>
+                <div class="col-sm-1">
+                    <label for="6x">6</label>
+                    <input type="text" id="6x" name="6x" placeholder="6">
+                </div>
+            </div>
+        </div>
+        </br>
+        <input id="login" type="submit" class="btn-block" value="submit">
+    </form>
+    </br>
+    <h3>The Discrete Random Variable E(x) is : {{ value }}</h3>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+#background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.jpeg');
+}
+#box {
+    width: 400px;
+    height: 500px;
+    background-color: #f9faf9;
+    box-shadow: 10px 10px 5px #888888;
+    position: absolute;
+    top: 10%;
+    right: 450px;
+}
+#title{
+    position: absolute;
+    top: 30px;
+    right: 160px;
+}
+#username{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+#filler{
+    color: #f9faf9
+}
+#forgotten{
+    color: #003399;
+    background-color: #f9faf9;
+    border: #f9faf9;
+    position: absolute;
+    top: 250px;
+    right: 200px;
+}
+#login{
+    color: #f9faf9;
+    background-color: #003399;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    border: #003399;
+    height: 30px;
+    width: 60px;
+}
